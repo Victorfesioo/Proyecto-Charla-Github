@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre meetups, talleres y eventos de tecnología en Málaga. Tu próxima conexión empieza aquí."
+    />
+    <meta name="theme-color" content="#10120f" />
+    <title>píxel — Tecnología que pasa en Málaga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="píxel, inicio">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>píxel<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="nav-link active" href="#agenda">Agenda</a>
+          <a class="nav-link" href="#explora">Explora</a>
+          <a class="nav-link" href="#comunidad">Comunidad</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.6 8.6 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+          </button>
+          <a class="submit-button" href="mailto:hola@pixelmalaga.dev?subject=Quiero%20proponer%20un%20evento">
+            <span>Propón un evento</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="explora">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse-dot"></span> TU PUNTO DE ENCUENTRO TECH</div>
+            <h1>La tecnología<br />también <span>pasa aquí.</span></h1>
+            <p class="hero-description">
+              Gente curiosa, ideas que se comparten y planes que no te quieres perder. Todo lo tech de Málaga, en un mismo lugar.
+            </p>
+            <a class="hero-link" href="#agenda">Encuentra tu próximo plan <span aria-hidden="true">↘</span></a>
+            <div class="hero-community">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar avatar-one">L</span><span class="avatar avatar-two">M</span><span class="avatar avatar-three">J</span><span class="avatar avatar-four">+</span>
+              </div>
+              <span><strong>1.2k+</strong> personas en la comunidad</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Ilustración de Málaga con elementos tecnológicos">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+            <div class="art-sun"></div>
+            <div class="art-grid"></div>
+            <div class="art-label label-top"><span class="label-dot"></span> 36°43' N · 4°25' O</div>
+            <div class="art-label label-bottom">MÁLAGA / 2026</div>
+            <div class="art-chip chip-one"><span class="chip-icon">⌘</span><span>build<br /><b>together</b></span></div>
+            <div class="art-chip chip-two"><span class="chip-icon">✳</span><span>meet<br /><b>people</b></span></div>
+            <svg class="city-illustration" viewBox="0 0 620 320" role="img" aria-label="Silueta ilustrada de Málaga">
+              <path class="mountain-back" d="M0 166 62 126l44 23 67-75 64 66 44-32 58 45 64-91 46 68 64-37 60 49 47-25v203H0Z"/>
+              <path class="mountain-front" d="m0 219 69-54 41 25 55-39 47 43 48-30 52 32 49-58 52 39 45-47 60 57 42-19 60 43v109H0Z"/>
+              <path class="shore" d="M0 259c77-17 127 14 194-4 74-20 114 6 181-2 68-9 102 13 245-2v69H0Z"/>
+              <path class="city-building building-tall" d="M304 109h38v114h-38zM311 94h24v15h-24z"/>
+              <path class="city-building" d="M251 177h38v53h-38zM348 162h33v68h-33zM389 184h34v47h-34zM216 194h28v36h-28zM433 177h32v54h-32z"/>
+              <path class="city-detail" d="M259 185h7v10h-7zm14 0h7v10h-7zm-14 16h7v10h-7zm14 0h7v10h-7zm85-13h7v10h-7zm12 0h7v10h-7zm-12 16h7v10h-7zm12 0h7v10h-7zm-54-96h5v9h-5zm13 0h5v9h-5zm-13 17h5v9h-5zm13 0h5v9h-5z"/>
+              <path class="palmtree" d="M89 220v-52m0 0c-27-4-34-18-29-28 9 2 22 7 31 19-4-23 6-37 16-40 7 12 3 27-9 43 14-9 29-8 36-2-2 13-16 20-40 16"/>
+              <path class="palmtree second-palm" d="M500 223v-45m0 0c-24-3-30-15-26-24 8 2 19 6 27 16-4-20 5-33 14-35 6 11 2 24-8 38 12-8 25-7 31-2-2 11-14 17-35 14"/>
+              <path class="shore-line" d="M0 267c82-15 119 13 191-5 68-17 125 6 184-2 71-9 112 15 245-2"/>
+            </svg>
+            <span class="art-caption">CÓDIGO, CAFÉ Y<br />BRISA DE MAR.</span>
+          </div>
+        </section>
+
+        <section class="stats-strip" aria-label="La comunidad en cifras">
+          <div class="stat"><strong>24</strong><span>eventos este mes</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>08</strong><span>comunidades locales</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>∞</strong><span>ideas por compartir</span></div>
+          <div class="strip-aside"><span class="tiny-star">✳</span> HECHO EN MÁLAGA</div>
+        </section>
+
+        <section class="agenda-section" id="agenda">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow section-eyebrow"><span class="section-index">01</span> AGENDA ABIERTA</div>
+              <h2>¿Qué se cuece?</h2>
+            </div>
+            <p class="section-intro">Buenas ideas, mejores conversaciones.<br />Tu agenda tech empieza por aquí.</p>
+          </div>
+
+          <div class="agenda-layout">
+            <aside class="calendar-panel" aria-label="Calendario de noviembre de 2026">
+              <div class="calendar-top">
+                <div>
+                  <span class="calendar-kicker">PLANIFICA TU MES</span>
+                  <h3 id="calendar-month">Noviembre <span>2026</span></h3>
+                </div>
+                <div class="calendar-controls">
+                  <button type="button" id="prev-month" aria-label="Mes anterior">‹</button>
+                  <button type="button" id="next-month" aria-label="Mes siguiente">›</button>
+                </div>
+              </div>
+              <div class="calendar-grid" id="calendar-grid" aria-label="Días del mes"></div>
+              <div class="calendar-legend"><span class="legend-dot"></span> Hay plan</div>
+              <div class="calendar-note">
+                <span class="note-icon">↗</span>
+                <span>¿Organizas algo?<br /><a href="mailto:hola@pixelmalaga.dev?subject=Quiero%20proponer%20un%20evento">Que se entere Málaga <b>→</b></a></span>
+              </div>
+            </aside>
+
+            <div class="events-panel">
+              <div class="event-tools">
+                <div class="filter-tabs" role="group" aria-label="Filtrar eventos">
+                  <button class="filter-tab active" type="button" data-filter="Todos">Todos <span>06</span></button>
+                  <button class="filter-tab" type="button" data-filter="Meetup">Meetups</button>
+                  <button class="filter-tab" type="button" data-filter="Taller">Talleres</button>
+                  <button class="filter-tab" type="button" data-filter="Charla">Charlas</button>
+                </div>
+                <label class="search-box">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.7" cy="8.7" r="5.6"/><path d="m13 13 4 4"/></svg>
+                  <input id="event-search" type="search" placeholder="Buscar plan..." aria-label="Buscar eventos" />
+                  <kbd>/</kbd>
+                </label>
+              </div>
+              <div class="event-list" id="event-list" aria-live="polite"></div>
+              <div class="empty-state" id="empty-state" hidden>
+                <span>¯\_(ツ)_/¯</span><p>No hay planes con esos filtros.<br />Prueba con otra búsqueda.</p>
+              </div>
+              <button class="load-more" id="load-more" type="button">Descubrir todos los eventos <span>↗</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="community-banner" id="comunidad">
+          <div class="banner-decoration" aria-hidden="true">✳</div>
+          <div class="banner-copy">
+            <div class="eyebrow"><span class="banner-index">02</span> ESTO VA DE PERSONAS</div>
+            <h2>La mejor conexión<br />no lleva <span>cable.</span></h2>
+            <p>Detrás de cada evento hay alguien que decidió compartir una idea. Ven como eres, sal con nuevas conexiones.</p>
+            <a href="mailto:hola@pixelmalaga.dev?subject=Quiero%20unirme%20a%20la%20comunidad" class="banner-button">Encuentra a tu gente <span>→</span></a>
+          </div>
+          <div class="banner-art" aria-hidden="true">
+            <div class="banner-orbit"></div>
+            <div class="banner-orbit orbit-small"></div>
+            <span class="banner-emoji emoji-1">👾</span><span class="banner-emoji emoji-2">💡</span><span class="banner-emoji emoji-3">☕</span>
+            <span class="banner-tag tag-1">01 / CONECTA</span><span class="banner-tag tag-2">02 / COMPARTE</span>
+            <div class="banner-center">MÁLAGA<br /><span>MADE OF PEOPLE</span></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#" aria-label="píxel, inicio">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>píxel<span class="brand-dot">.</span></span>
+        </a>
+        <span class="footer-note">Un calendario hecho con <span>♥</span> en Málaga.</span>
+        <div class="footer-right"><span>© 2026 PÍXEL MALAGA</span><a href="mailto:hola@pixelmalaga.dev">HOLA@PIXELMALAGA.DEV ↗</a></div>
+      </footer>
+    </div>
+    <noscript><p class="noscript-message">Activa JavaScript para explorar el calendario y filtrar eventos.</p></noscript>
+  </body>
+</html>
